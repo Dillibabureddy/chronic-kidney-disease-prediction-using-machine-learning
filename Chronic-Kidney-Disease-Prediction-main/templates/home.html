@@ -1,0 +1,341 @@
+{% extends 'main.html' %}
+{% block content %}
+{% if message %}
+        <div class="alert alert-danger">{{ message }}</div>
+    {% endif %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kidney Disease Prediction</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    
+    <main role="main">
+
+      <section class="jumbotron p-3 p-md-5 text-white rounded bg-dark text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Chronic Kidney Disease Prediction</h1>
+          <p class="lead">Chronic Kidney Disease (CKD) is an important
+            worldwide health issue since it is associated with high morbidity
+            and mortality. It is important to diagnose CKD at an early stage
+            in order to stop it from getting to worse stages. In this paper, we
+            investigated several machine learning models in order to make the
+            prediction of CKD more precise and employed algorithms such
+            as XGBoost, Support Vector Machine (SVM), Linear Regression,
+            Random Forest, Decision Tree, Logistic Regression and Na¨ıve
+            Bayes. Age, gender and laboratory test results among health data
+            were processed with the aim of making sure the data physically
+            and logically makes sense. Each model was then assessed against
+            the major metrics, namely accuracy, precision, sensitivity and
+            specificity.
+            Findings showed that Random forest model was the most
+            accurate among the other with a 96.67% of accuracy obtained.
+            Furthermore, sensitivity was found to be highest for Naive
+            Bayes 95.8% and XGBoost at 91.66% which was useful in
+            detecting CKD cases. This study has demonstrated the efficacy
+            of the machine learning models in CKD prediction in which
+            Hansel forest showed high precision levels while Naive bayes
+            and XGboost showed high performance in sensitivity. These
+            results are encouraging when it comes to the early detection
+            and management of CKD, which can result in good outcomes in
+            patients.</p>
+          <p>
+            <a href="https://www.sciencedirect.com/science/article/pii/S2153353923000032" class="btn btn-primary my-2">Read More about the Disease</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">Machine Learning</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="#">Random Forest</a>
+              </h3>
+              <div class="mb-1 text-muted">For Regression & Classification</div>
+              <p class="card-text mb-auto">Random forest is a supervised learning algorithm. ... The general idea of the bagging method is that a combination of learning models increases the overall result. Put simply: random forest builds multiple decision trees and merges them together to get a more accurate and stable prediction.</p>
+              <a href="#">Continue reading</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-success">Model & Algorithm</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="#">XGBoost</a>
+              </h3>
+              <div class="mb-1 text-muted">Gradient Boosting Machine</div>
+              <p class="card-text mb-auto">XGBoost is an algorithm that has recently been dominating applied machine learning and Kaggle competitions for structured or tabular data. XGBoost is an implementation of gradient boosted decision trees designed for speed and performance.</p>
+              <a href="#">Continue reading</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="https://cdn.icon-icons.com/icons2/2593/PNG/512/data_icon_154512.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>DataSet</h2>
+            <p>We have used the dataset available in 
+              University of California Irvine (UCI) repositry Chronic-Kidney Disease Prediction. This data set contains about 1338 records of data in various categories.</p>
+            <p><a class="btn btn-secondary" href="https://drive.google.com/file/d/1iuU0_ehVO3UzYl1Qm9FyG3Z9CFu32W-u/view?usp=sharing" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="https://www.edureka.co/blog/wp-content/uploads/2019/01/Classification-Random-Forest-Random-Forest-In-R-Edureka-2-381x300.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Methodology</h2>
+            <p>data preprocessing, feature selection, training/testing split, model evaluation metrics of various models  , and final prediction</p>
+            <p><a class="btn btn-secondary" href="https://drive.google.com/file/d/16LMpQlDaPoXHpZ_aB3UBCvtchfYP1tiE/view?usp=drive_link" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="https://cdn.pixabay.com/photo/2016/05/25/13/18/target-1414775_960_720.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Accuracy</h2>
+            <p>decision tree & ramdom forest based ensemble Machine Learning algorithm . After modelling our data, the Accuracy is <b>96.67%.</b> So far we achieved a Good accuracy. </p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-12">
+            <h2 class="featurette-heading">Different Machine Learning Models analysis</h2>
+            <p class="lead"></p>
+          </div>
+        </div>
+        <div class="Architechture diagram">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          
+          <title>Model Performance Table</title>
+          <style>
+            table {
+              width: 100%;
+              border-collapse: collapse;
+              font-family: Arial, sans-serif;
+              text-align: center;
+            }
+            th, td {
+              padding: 10px;
+              border: 1px solid #ddd;
+            }
+            th {
+              color: white;
+            }
+            th:nth-child(1) { background-color: #00d3e3; } /* Model column header */
+            th:nth-child(2) { background-color: #6066d1; } /* Accuracy */
+            th:nth-child(3) { background-color: #f19ca5; } /* Precision */
+            th:nth-child(4) { background-color: #ffe4aa; } /* Specificity */
+            th:nth-child(5) { background-color: #f4e56f; } /* Sensitivity */
+            th:nth-child(6) { background-color: #9fe3a2; } /* F1 Score */
+            th:nth-child(7) { background-color: #8ca7dd; } /* Recall */
+            th:nth-child(8) { background-color: #ccc; } /* Classification */
+            th:nth-child(9) { background-color: #c2a1d3; } /* AUC */
+            th:nth-child(10) { background-color: #f19ca5; } /* F Measure */
+            tr:nth-child(even) {
+              background-color: #f9f9f9;
+            }
+            tr:hover {
+              background-color: #f1f1f1;
+            }
+          </style>
+          <table>
+            <tr>
+              <th>Model</th>
+              <th>Accuracy</th>
+              <th>Precision</th>
+              <th>Specificity</th>
+              <th>Sensitivity</th>
+              <th>F1 Score</th>
+              <th>Recall</th>
+              <th>Classification</th>
+              <th>AUC</th>
+              <th>F Measure</th>
+            </tr>
+            <tr>
+              <td>Random Forest</td>
+              <td>0.966667</td>
+              <td>0.94</td>
+              <td>0.958333</td>
+              <td>0.979167</td>
+              <td>0.959184</td>
+              <td>0.979167</td>
+              <td>0.033333</td>
+              <td>0.998843</td>
+              <td>0.959184</td>
+            </tr>
+            <tr>
+              <td>Decision Tree</td>
+              <td>0.966667</td>
+              <td>0.94</td>
+              <td>0.958333</td>
+              <td>0.979167</td>
+              <td>0.959184</td>
+              <td>0.979167</td>
+              <td>0.033333</td>
+              <td>0.96875</td>
+              <td>0.959184</td>
+            </tr>
+            <tr>
+              <td>SVM</td>
+              <td>0.958333</td>
+              <td>0.938776</td>
+              <td>0.958333</td>
+              <td>0.979167</td>
+              <td>0.948454</td>
+              <td>0.958333</td>
+              <td>0.041667</td>
+              <td>0.988137</td>
+              <td>0.959184</td>
+            </tr>
+            <tr>
+              <td>Linear Regression</td>
+              <td>0.958333</td>
+              <td>0.90566</td>
+              <td>0.958333</td>
+              <td>0.979167</td>
+              <td>0.950495</td>
+              <td>1</td>
+              <td>0.041667</td>
+              <td>0.990162</td>
+              <td>0.959184</td>
+            </tr>
+            <tr>
+              <td>Logistic Regression</td>
+              <td>0.958333</td>
+              <td>0.921569</td>
+              <td>0.958333</td>
+              <td>0.979167</td>
+              <td>0.949495</td>
+              <td>0.979167</td>
+              <td>0.041667</td>
+              <td>0.99103</td>
+              <td>0.959184</td>
+            </tr>
+            <tr>
+              <td>Naive Bayes</td>
+              <td>0.958333</td>
+              <td>0.90566</td>
+              <td>0.958333</td>
+              <td>0.979167</td>
+              <td>0.950495</td>
+              <td>1</td>
+              <td>0.041667</td>
+              <td>1</td>
+              <td>0.959184</td>
+            </tr>
+            <tr>
+              <td>XGBoost</td>
+              <td>0.916667</td>
+              <td>0.931818</td>
+              <td>0.958333</td>
+              <td>0.979167</td>
+              <td>0.891304</td>
+              <td>0.854167</td>
+              <td>0.083333</td>
+              <td>0.977575</td>
+              <td>0.959184</td>
+            </tr>
+          </table>
+          </div>
+        </div>
+        
+        <style>
+          /* Style for large, dark arrow */
+          .large-arrow {
+            font-size: 3em; /* Adjust size as needed */
+            color: #000; /* Dark color */
+            display: block;
+            text-align: center;
+            margin: 10px 0;
+          }
+        </style>
+
+        
+
+        <!---
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-12">
+            <h2 class="featurette-heading"></h2><!--conflicts and modifications head
+            <p class="lead"></p>
+          </div>
+        </div>
+      -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-12">
+            <h2 class="featurette-heading">Different Machine Learning Models analysis</h2>
+            <p class="lead"></p>
+          </div>
+        </div>
+        <div class="Architechture diagram">
+          <i
+        <div class="row featurette">
+          <div class="col-md-12">
+            <h2 class="featurette-heading">Future implementations</h2>
+            <p class="lead">Upload image and process the X-Ray image and predict for any chances of getting the disease.</p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+        
+      </div><!-- /.container -->
+      <section class="jumbotron p-5 p-md-5 text-white rounded bg-dark text-left">
+        <div class="container">
+          <h1 class="jumbotron-heading">Chronic Kidney Disease Prediction</h1>
+          <p class="lead">Chronic kidney disease (CKD) is one of the most
+            critical health problems due to its increasing prevalence. In this
+            paper, we aim to test the ability of machine learning algorithms
+            for the prediction of chronic kidney disease using the smallest
+            subset of features</p>
+          <p>
+            <a href="{{ url_for('kidneyPage') }}" class="btn btn-primary my-2">Check out the Project</a>
+          </p>
+        </div> 
+      </section>
+    </div>
+
+      
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>
+
+{% endblock %}
